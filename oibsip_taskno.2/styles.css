@@ -1,0 +1,160 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+ }
+ 
+ .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+ }
+ 
+ header {
+    text-align: center;
+    margin-bottom: 40px;
+ }
+ 
+ header h1 {
+    font-size: 3.5rem;
+    color: #2e2e2e;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+ }
+ 
+ header .tagline {
+    font-style: italic;
+    color: #6e6e6e;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    letter-spacing: 1px;
+ }
+ 
+ 
+ .hero-section {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+ }
+ 
+ .hero-section .hero-img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+ }
+ 
+ .hero-section .hero-img:hover {
+    transform: scale(1.05);
+ }
+ 
+ 
+ .content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+ }
+ 
+ .biography, .works, .quote-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+ }
+ 
+ .biography h2, .works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+ }
+ 
+ .biography h2::before, .works h2::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: #c33;
+    bottom: -5px;
+    left: 0;
+ }
+ 
+ .biography p {
+    font-size: 1.1rem;
+    color: #555;
+ }
+ 
+ .works-list {
+    list-style: none;
+    font-size: 1.2rem;
+    color: #444;
+ }
+ 
+ .works-list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+ }
+ 
+ .works-list li::before {
+    content: "🎨";
+    position: absolute;
+    left: 0;
+ }
+ 
+ .quote-section {
+    background-color: #e8e8e8;
+    padding: 30px;
+    text-align: center;
+    border-left: 5px solid #c33;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: #444;
+    margin-bottom: 20px;
+    border-radius: 10px;
+ }
+ 
+ 
+ footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 0 0 10px 10px;
+ }
+ 
+ footer p {
+    font-weight: 500;
+ }
+ 
+ 
+ @media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+ 
+    .biography h2, .works h2 {
+        font-size: 2rem;
+    }
+ 
+    .quote-section {
+        font-size: 1.2rem;
+    }
+ }
+ 
